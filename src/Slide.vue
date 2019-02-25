@@ -108,6 +108,7 @@
                     }
                 } else {
                     const {index} = this;
+                    this.parent.$emit('mainSlideClick', {index});
                     this.parent.onMainSlideClick({index});
                 }
             }
